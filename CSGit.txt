@@ -1,0 +1,96 @@
+Installer GIT en le téléchargeant sur le site web
+
+1 configuration
+---------------
+
+Vérivier que GIT est bien installé dans CMD : 
+ git --version
+
+S'identifier sur GIT :
+ git config --global user.name "Ton_Nom"
+ git config --global user.email "Ton_mail@blablabla.be"
+
+2 paramétrer
+------------
+
+Créer un répertoire : 
+ mkdir Nom_Du_Repertoire
+
+Se déplacer dans le répertoire :
+ cd Nom_Du_Repertoire
+
+Initialier GIT pour pouvoir utiliser le répertoire :
+ git init
+
+Voir le statut global des fichiers :
+ git status
+
+3 manipuler
+-----------
+
+Faire un commit. Cela se fait en deux parties
+
+ - Sélectionner le(s) fichier(s) avec :
+    git add Nom_De_Fichier
+ - prendre la "photo", l'instantané du ficher :
+    git commit -m "Commentaire_Du_Commit"
+
+Faire des modifs du fichier source. Mise à jour du fichier sur GIT
+
+ - Sélectionner le(s) fichier(s) avec :
+    git add Nom_De_Fichier
+ - prendre la "photo", l'instantané du ficher :
+    git commit -m "Commentaire_Du_Commit"
+
+Avoir une timeline de toutes les modifications avec la commande :
+ git log
+
+4 les Branches
+--------------
+Une branche doit se rapprocher au maximum à la fonctionnalité de celle-ci (design pour ux par exemple)
+Pour créer une branche dans git, il faut utiliser la commande :
+ git branch Nom_De_La_Branche
+
+Pour visualiser les branches, il faut se mettre dans le dossier et taper :
+ git branch
+
+La liste des branches apparait. La branche avec un * désigne la branche sur laquelle nous sommes.
+Pour changer de branche, il suffit de taper l'instruction :
+ git checkout Nom_De_la_Branche
+
+Une fois toutes les modifications faites et les versions commitées, on veut rappatrier le fichier sur la branche principale.
+Cela se fait en 3 étapes.
+
+ - Basculer sur la branche de destination, celle qui va recevoir la modification :
+    git checkout Nom_De_La_Branche_Destination (ex marter)
+
+ - On va delabder à GIT de récupérer le travail que l'on a fait sur l'autre branche :
+    git merge Nom_de_La_Branche_Origine (ex design)
+
+ - FACULTATIF : On supprime la branche sur laquelle on travaillait :
+    git branch -d Nom_de_La_Branche_Origine (ex design)
+
+5 GihHub et dépot distant
+-------------------------
+- Créer un compte GitHub
+- Créer un nouveau Repository sur GitHub
+- Associer le dépôt local au dépôt distant
+  Pour ce faire, retourner dans gitHub, dans le repository. Sous la partie "...or push an existing repository from the commande line"
+  recopier l'url du style : 
+   git remote add origin https://github.com/xxxxxx/test.git
+
+Vérivier les dépôts distants du projet avec la commande :
+ git remote
+
+Pour déposer le projet dans gitHub il faut utiliser la commande :
+ git push origin master (origine étant le label du dépot et marter le nom de la branche à déposer)
+
+Pour qu'un collaborateur puisse travailer sur le projet il faut :
+
+- Il doit avoir un compte gitHub
+- On doit leur donner un acces repository selon leurs rôles via la partie Settings > Collaborators et indiquer les nom des collaborateurs.
+- Il doit se connecter avec la commande :
+   git remote add origin https://github.com/xxxxxx/test.git
+- Pour rappatrier tout le projet du dépôt distant vers le dépôt local il faut utiliser :
+   git pull origin master (origine étant le label du dépot et marter le nom de la branche à déposer)
+
