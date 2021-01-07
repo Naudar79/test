@@ -1,0 +1,50 @@
+MARCKDOWN
+---------
+
+basculez l'éditeur en marckdown
+
+Pour créer des paragraphes il faut laisser une ligne vide entre chaque bloc
+
+Pour mettre du texte en gras il faut l'entourer comme ceci **Texte** ou __Texte__
+
+Pour mettre du texte en italique il faut l'entourer comme ceci *Texte* ou _Texte_
+
+On peut créer des titres de plusieurs façons :
+
+Titre de niveau 1
+=================
+
+Titre de niveau 2
+-----------------
+
+On peut également utiliser cette syntaxe
+
+# Titre niveau 1
+
+## Titre niveau 2
+
+### Titre niveau 3
+
+.... et plus si affinité
+
+Les listes à puces s'utilisent avec * ou - ou + cela aura le même Effet
+
+* Une puce
+* Une autre puce
+    * Une sous-puce
+    * une autre sous -puce
+* Et encore une autre puce
+
+listes numérotée
+
+1. Et de un
+2. Et de deux
+3. Ete de trois
+
+Les citations s"utilisent avec >
+
+> ceci est un texte cité. Vous pouvez répondre
+> à cette sitation en écrivant un paragraphe
+> normal juste en-dessous
+
+Pour insérer du code, il faut le faire précéder de 4 espaces ou d'une tabulation
