@@ -48,3 +48,18 @@ Les citations s"utilisent avec >
 > normal juste en-dessous
 
 Pour insérer du code, il faut le faire précéder de 4 espaces ou d'une tabulation
+
+Pour insérer du code au milieu d'un paragraphe, il faut l'entourer d'un accent grave debut du texte `printf()` suite du texte
+
+Pour créer un lien il faut le mettre entre crochets et l'url entre parenhtèses [AWSC](https://www.awsc.be)
+
+Pour créer une image il faut mettre le nom entre crochets précédé d'un point d'exclmation et le chemin entre parenhtèses ![toto](http://www.monsite.com/image.png)
+
+Pour faire une barre de séparation, il suffit de mettre quelques - ou quelques *
+
+------------- ou *************
+
+On peut mixer le marckdown avec de l'html
+
+
+
